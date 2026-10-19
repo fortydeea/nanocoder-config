@@ -1,0 +1,28 @@
+{
+  "nanocoder": {
+    "providers": [
+      {
+        "name": "PrimaLabs",
+        "models": [
+          "primalabs-ai/MiMo-V2.6-Pro"
+        ],
+        "baseUrl": "https://api.primalabs.ai/v1",
+        "apiKey": "${PRIMALABS_API_KEY}"
+      }
+    ],
+    "hooks": {
+      "pre-tool-use": [
+        {
+          "name": "token-guard",
+          "matchTools": ["execute_bash"],
+          "command": "$HOME/.config/nanocoder/hooks/token-guard.sh",
+          "timeout": 5000
+        }
+      ]
+    },
+    "systemPrompt": {
+      "mode": "append",
+      "file": "/home/fortydeea/.config/nanocoder/system-prompt.md"
+    }
+  }
+}

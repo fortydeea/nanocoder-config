@@ -1,0 +1,8 @@
+{
+  "mcpServers": {
+    "context-mode": {
+      "transport": "stdio",
+      "command": "context-mode"
+    }
+  }
+}
