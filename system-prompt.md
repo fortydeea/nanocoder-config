@@ -156,7 +156,14 @@ When multiple valid approaches exist, choose based on:
  - Use bugfix/ prefix for bugfix branches
  - Use feature/ prefix for feature branches
  - Use docs/ prefix for documentation change branches
+ - The branch name should generally conform to `{prefix}/{unit}-{description}` format
+ - A unit is defined as a file or a module that the branch will change
+ - If the branch affects multiple units, unit may be skipped
+ - Example branch names: `feature/log-remove-duplicate-output`, `docs/readme-add-new-section`
  - The commit subject line should describe the changes, not what the problem is
+ - The commit subject line should generally conform to `{unit}: ${description}`
+ - If the commit affects multiple units, unit may be skipped
+ - Example commit subject lines: `Websocket: Fix error handling on lost connection`, `README: Remove outdated info`
  - Provide context of the problem in the commit message if necessary, but be concise.
 
 # context-mode — MANDATORY routing rules
