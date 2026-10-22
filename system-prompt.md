@@ -151,6 +151,14 @@ When multiple valid approaches exist, choose based on:
 - Learn from existing implementations
 - Stop after 3 failed attempts and reassess
 
+## Git rules
+
+ - Use bugfix/ prefix for bugfix branches
+ - Use feature/ prefix for feature branches
+ - Use docs/ prefix for documentation change branches
+ - The commit subject line should describe the changes, not what the problem is
+ - Provide context of the problem in the commit message if necessary, but be concise.
+
 # context-mode — MANDATORY routing rules
 
 context-mode MCP tools available. Rules protect context window from flooding. One unrouted command dumps 56 KB into context. A nanocoder hook blocks curl/wget and un-prefixed RTK commands; everything else here relies on you. Follow strictly.
