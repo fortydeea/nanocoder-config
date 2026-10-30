@@ -4,6 +4,7 @@
       {
         "name": "PrimaLabs",
         "models": [
+          "primalabs-ai/DeepSeek-V4.1-Flash-1017",
           "primalabs-ai/MiMo-V2.6-Pro"
         ],
         "baseUrl": "https://api.primalabs.ai/v1",
